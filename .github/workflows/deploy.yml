@@ -24,6 +24,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Clear default content
+        run: rm -rf content
+
       - name: Checkout obsidian-vault into content/
         uses: actions/checkout@v4
         with:
