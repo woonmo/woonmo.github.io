@@ -16,6 +16,8 @@ configuration:
     - 98_Inbox
     - 99_Publishing
     - "_private"
+    - example
+    - "**/*Attachment*"
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
