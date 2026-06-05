@@ -34,6 +34,17 @@ jobs:
           token: ${{ secrets.VAULT_PAT }}
           path: content
 
+      - name: Filter publish:true notes only
+        run: |
+          # publish: true 없는 마크다운 파일 제거
+          find content -name "*.md" -type f | while IFS= read -r f; do
+            if ! grep -qP "^publish:\s*true" "$f"; then
+              rm "$f"
+            fi
+          done
+          echo "Remaining files:"
+          find content -name "*.md" | wc -l
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
