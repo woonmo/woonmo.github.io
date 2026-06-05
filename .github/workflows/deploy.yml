@@ -40,7 +40,7 @@ jobs:
         run: |
           # publish: true 없는 마크다운 파일 제거
           find content -name "*.md" -type f | while IFS= read -r f; do
-            if ! grep -qP "^publish:\s*true" "$f"; then
+            if ! grep -qP "^publish:\s*\"?true\"?" "$f"; then
               rm "$f"
             fi
           done
