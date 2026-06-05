@@ -18,6 +18,7 @@ configuration:
     - "_private"
     - example
     - "**/*Attachment*"
+    - "**/*.canvas"
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
