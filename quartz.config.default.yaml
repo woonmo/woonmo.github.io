@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: null
   locale: ko-KR
-  baseUrl: woonmo.github.io
+  baseUrl: garden.lazycorn.net
   ignorePatterns:
     - .obsidian
     - 05_Templates
