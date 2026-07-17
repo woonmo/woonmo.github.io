@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout blog repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -30,7 +30,7 @@ jobs:
         run: rm -rf content
 
       - name: Checkout obsidian-vault into content/
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: woonmo/obsidian-vault
           token: ${{ secrets.VAULT_PAT }}
@@ -48,13 +48,13 @@ jobs:
           find content -name "*.md" | wc -l
 
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
 
       - name: Cache Quartz plugins
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: .quartz/plugins
           key: ${{ runner.os }}-plugins-${{ hashFiles('quartz.lock.json') }}
