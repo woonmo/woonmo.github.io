@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="140 56 400 400" role="img">
+<title>lazycorn</title>
+<desc>껍질을 윗부분만 깐 채 회의적인 표정을 한 옥수수 마스코트 (투명 배경)</desc>
+<defs>
+<clipPath id="d"><path d="M278 215 C268 145 302 88 340 88 C378 88 412 145 402 215 Z"/></clipPath>
+<clipPath id="eL"><ellipse cx="312" cy="153" rx="17" ry="17"/></clipPath>
+<clipPath id="eR"><ellipse cx="368" cy="153" rx="17" ry="17"/></clipPath>
+</defs>
+<g transform="rotate(-5 340 244)">
+<path d="M278 215 C268 145 302 88 340 88 C378 88 412 145 402 215 Z" fill="#E9C56C" stroke="#3A3631" stroke-width="4"/>
+<g clip-path="url(#d)"><g fill="#F1D687" stroke="#D2AB52" stroke-width="1.2">
+<ellipse cx="326" cy="106" rx="9" ry="11"/><ellipse cx="354" cy="106" rx="9" ry="11"/>
+<ellipse cx="300" cy="200" rx="9" ry="11"/><ellipse cx="329" cy="200" rx="9" ry="11"/><ellipse cx="358" cy="200" rx="9" ry="11"/><ellipse cx="387" cy="200" rx="9" ry="11"/>
+<ellipse cx="296" cy="176" rx="9" ry="11"/><ellipse cx="384" cy="176" rx="9" ry="11"/>
+</g></g>
+<path d="M272 200 C256 250 258 350 302 410 C322 424 358 424 378 410 C422 350 424 250 408 200 C398 224 378 232 340 232 C302 232 282 224 272 200 Z" fill="#8FA460" stroke="#3A3631" stroke-width="4"/>
+<g stroke="#6E7E48" stroke-width="2.4" fill="none" opacity="0.7" stroke-linecap="round">
+<path d="M303 244 C298 320 302 378 322 406"/><path d="M340 240 L340 416"/><path d="M377 244 C382 320 378 378 358 406"/>
+</g>
+<path d="M274 206 C244 192 220 206 214 240 C236 248 262 240 276 214 Z" fill="#A9BD7C" stroke="#3A3631" stroke-width="3.5"/>
+<path d="M406 206 C436 192 460 206 466 240 C444 248 418 240 404 214 Z" fill="#A9BD7C" stroke="#3A3631" stroke-width="3.5"/>
+<ellipse cx="312" cy="153" rx="17" ry="17" fill="#FBF8F0" stroke="#3A3631" stroke-width="3"/>
+<ellipse cx="368" cy="153" rx="17" ry="17" fill="#FBF8F0" stroke="#3A3631" stroke-width="3"/>
+<g clip-path="url(#eL)"><ellipse cx="308" cy="159" rx="9.5" ry="11" fill="#3A3631"/><path d="M293 128 H332 V150 Q312 157 293 150 Z" fill="#E5BE5C"/></g>
+<g clip-path="url(#eR)"><ellipse cx="364" cy="159" rx="9.5" ry="11" fill="#3A3631"/><path d="M349 128 H388 V150 Q368 157 349 150 Z" fill="#E5BE5C"/></g>
+<ellipse cx="312" cy="153" rx="17" ry="17" fill="none" stroke="#3A3631" stroke-width="3"/>
+<ellipse cx="368" cy="153" rx="17" ry="17" fill="none" stroke="#3A3631" stroke-width="3"/>
+<path d="M297 150 Q312 157 327 150" stroke="#3A3631" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<path d="M353 150 Q368 157 383 150" stroke="#3A3631" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<path d="M294 132 Q311 125 329 131" stroke="#3A3631" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+<path d="M353 139 Q368 137 385 140" stroke="#3A3631" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.9"/>
+<path d="M320 184 Q338 184 356 188" stroke="#3A3631" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</g>
+</svg>
