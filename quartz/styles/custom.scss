@@ -12,13 +12,57 @@
   max-width: 900px; // 중앙 콘텐츠 컬럼 (줄글·표 공통)
 }
 
-// Mermaid 다이어그램 — 컬럼(900) 넘지 않게 축소, 넘치면 그 안에서만 스크롤
+// ─────────────────────────────────────────────
+// Mermaid 다이어그램
+//  - 컬럼(900) 넘지 않게 축소
+//  - 한글 또렷한 시스템 폰트 (기본 trebuchet 폴백이 처참)
+//  - 노드·엣지라벨 불투명·고대비 (반투명이라 글씨 묻히던 문제)
+// ─────────────────────────────────────────────
 .mermaid {
   overflow-x: auto;
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR",
+    "Segoe UI", sans-serif !important;
 }
 .mermaid svg {
   max-width: 100% !important;
   height: auto;
+}
+
+// 노드 박스 — 솔리드 채움 + 또렷한 외곽 (반투명 제거)
+.mermaid .node rect,
+.mermaid .node polygon,
+.mermaid .node circle,
+.mermaid .node path {
+  fill: var(--lightgray) !important;
+  fill-opacity: 1 !important;
+  stroke: var(--darkgray) !important;
+}
+
+// 라벨 텍스트 — 진한 색, 상속 폰트
+.mermaid .nodeLabel,
+.mermaid .edgeLabel,
+.mermaid span,
+.mermaid p,
+.mermaid text {
+  color: var(--dark) !important;
+  fill: var(--dark) !important;
+  font-family: inherit !important;
+}
+
+// 화살표 위 라벨(통과/미통과) 배경 — 반투명 → 불투명
+.mermaid .edgeLabel,
+.mermaid .edgeLabel p,
+.mermaid .edgeLabel rect,
+.mermaid .edgeLabel foreignObject > div {
+  background: var(--light) !important;
+  fill: var(--light) !important;
+  opacity: 1 !important;
+}
+
+// 화살표 선
+.mermaid .edgePath .path,
+.mermaid .flowchart-link {
+  stroke: var(--gray) !important;
 }
 
 // ─────────────────────────────────────────────
