@@ -12,6 +12,15 @@
   max-width: 900px; // 중앙 콘텐츠 컬럼 (줄글·표 공통)
 }
 
+// Mermaid 다이어그램 — 컬럼(900) 넘지 않게 축소, 넘치면 그 안에서만 스크롤
+.mermaid {
+  overflow-x: auto;
+}
+.mermaid svg {
+  max-width: 100% !important;
+  height: auto;
+}
+
 // ─────────────────────────────────────────────
 // 테이블 — shadcn 룩(오사카 MkDocs 참고) + 정렬 교정
 //  일반 테이블로 900 안에서 줄바꿈 (display:block 안 씀 → 불필요 스크롤 방지)
