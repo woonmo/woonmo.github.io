@@ -1,6 +1,26 @@
 @use "./variables.scss" as *;
 
 // ─────────────────────────────────────────────
+// Pretendard 웹폰트 (한글·라틴 통합) — 본문·제목·표·mermaid 전체 적용
+//  Quartz가 쓰는 --bodyFont / --headerFont 변수만 덮으면 사이트 전역 반영
+// ─────────────────────────────────────────────
+@font-face {
+  font-family: "Pretendard Variable";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2")
+    format("woff2-variations");
+}
+
+:root {
+  --bodyFont: "Pretendard Variable", Pretendard, "Apple SD Gothic Neo",
+    "Malgun Gothic", "Segoe UI", sans-serif;
+  --headerFont: "Pretendard Variable", Pretendard, "Apple SD Gothic Neo",
+    "Malgun Gothic", "Segoe UI", sans-serif;
+}
+
+// ─────────────────────────────────────────────
 // 콘텐츠 폭 = 900px 통일 (줄글·표 동일)
 //  page = 900 + 사이드바(각 320) = 1540
 // ─────────────────────────────────────────────
@@ -20,8 +40,8 @@
 // ─────────────────────────────────────────────
 .mermaid {
   overflow-x: auto;
-  font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR",
-    "Segoe UI", sans-serif !important;
+  font-family: "Pretendard Variable", Pretendard, "Apple SD Gothic Neo",
+    "Malgun Gothic", sans-serif !important;
 }
 .mermaid svg {
   max-width: 100% !important;
